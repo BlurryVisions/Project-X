@@ -8,7 +8,8 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    text-align: center; 
+    text-align: center;
+
 }
 
 /* Global */
@@ -45,8 +46,8 @@ header a {
 }
 
 #Hright a:hover {
-    color: #7fffd4;
-    border-bottom: 2px solid #7fffd4 ;  
+    color: #5dbcd2;
+    border-bottom: 2px solid #5dbcd2 ;  
 }
 
 
@@ -70,7 +71,7 @@ header #Hright {
 }
 
 .logoc {
-    color: aquamarine;
+    color: #5dbcd2;
 }
 
 /* showcase */
@@ -83,7 +84,7 @@ header #Hright {
     margin-right: auto;
     background: url(../showcase.jpg) no-repeat -40px -100px ;
     text-align: center;
-    color: #7fffd4;
+    color: #5dbcd2;
     filter:blur(3px);
    
 }
