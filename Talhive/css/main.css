@@ -10,6 +10,7 @@ body{
     text-rendering: optimizeLegibility;
     text-align: center;
 
+
 }
 
 /* Global */
@@ -50,7 +51,7 @@ header.scrolled {
 
 header.scrolled a {
     transition: all ease .5s;
-    color: #000000;
+    color: #272323;
 }
 
 header.scrolled a:hover {
@@ -103,19 +104,29 @@ border-bottom: 2px solid #5dbcd2 ;
 }
 
 /* showcase */
+#showcase {
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    perspective: 1px;
+}
 
 #img {
-    background:  url("../showcase2.jpg") no-repeat 0px 70px fixed; 
+    background:  url("../showcase3.jpg") no-repeat fixed; 
+    top: 0;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 650px;
+    transform-style: inherit;
+    z-index: -1;
+    transform: translateZ(-1px) scale(2.2);
+    min-height: 680px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    filter: blur(1px);  
+    text-align: center; 
 }
 
 #img::after {
@@ -131,6 +142,7 @@ border-bottom: 2px solid #5dbcd2 ;
 
 #showcase .tex {
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -138,8 +150,7 @@ border-bottom: 2px solid #5dbcd2 ;
 }
 
 #showcase h1 {
-    
-    font-size: 60px;
+    font-size: 75px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -147,6 +158,8 @@ border-bottom: 2px solid #5dbcd2 ;
 
 /* newsletter 
 
+    border-bottom: 3px solid #ffffff26;
+    
 #newsletter {
     border-top: #ADD8E6 2px solid;
     border-bottom: #ADD8E6  2px solid;
@@ -206,18 +219,18 @@ border-bottom: 2px solid #5dbcd2 ;
 
 /* oclents */
 
-#oclients {
+#oclients , #oclients ul {
     padding: 20px 0;
 }
 
-#oclients .logos div {
+#oclients li  {
     display: inline-block;
 }
 
 #oclients img {
     width :70px;
     height: 70px;
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
 }
 
 /*  boxes  */
@@ -225,6 +238,7 @@ border-bottom: 2px solid #5dbcd2 ;
 
 #boxes {
     background: #f4f7f6;
+    padding: 20px 0;
 }
 
 
