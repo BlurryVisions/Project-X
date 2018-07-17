@@ -12,9 +12,12 @@
     <meta name="description" content="Job Consultant">
     <meta name="keywords" content="job portal">
     
-    <!--link -->
+    <!-- link -->
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
@@ -23,6 +26,7 @@
     <!--header-->
     <header>
         <div class="container">
+            
             <form>
                 <nav>
                 <div id="Hleft">
@@ -31,62 +35,92 @@
                 
                 <div id="Hright">
                     <ul>
-                        <li><a href="about.html">About us</a></li> 
-                        <li><a href="Jobs.html">Explore Jobs &amp; Companies</a></li>
-                        <li><a href="blog.html">Blogs</a></li>
-                        <li id="login"><a href="file:///G:/Talhive/Login.html">Login/Sign up</a></li>                      
+                        <a href="blog.html"><li>Blogs</li></a>
+                        <a href="Jobs.html"><li>Explore Jobs &amp; Companies</li></a> 
+                        <a href="about.html"><li>About us</li> </a>                                                       
                     </ul>
                 </div>
 
                 </nav>
             </form>
+            
         </div>
     </header>
 
     <!--main-->
     <section id="showcase">
-        <div class="container">
-            <img src="showcase.jpg">
+            <div id="img"></div>
             <div class="tex">
-            <h1>Welcome To <span class="mainlo">Tal</span>hive !</h1>
+            <h1>Welcome To Tal<span class="logoc">hive</span> <span class="locoe">!</span></h1>
             </div>
         </div>
     </section>
-    
+
+    <!-- popup
     <section id="newsletter">
         <div class="container">
                 <h2>Your dream Job, just a Click away.</h2>
                 <form>
-                    <input type="text" name="JTCN" placeholder="Job Title or Comapanny name">
+                    <input type="text" name="JTCN" placeholder="Job Title or Comapanny Name">
                     <input type="text" name="Location" placeholder="Location">
-                    <button class="" button1="">Search Jobs</button>
-                    
+                    <button class="" button1="">Search Jobs</button> 
                 </form>
+
                 <h2>OR</h2>
                 <h3>Subscribe and get Notified regarding latest Job Openings.</h3>
                 <h4><i>No Registration Required</i></h4>
                 <form>
                     <input type="email" name="EmailN" placeholder="Enter your Email id">
                     <button>Subscribe</button>
-                </form>
+                </form>                
+        </div>
+    </section>
+    -->
+
+    <section id="wedo">
+        <div class="container">
+            <h1>Our Services</h1>
+            
+            <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. Why do we use it? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+    </section>
+
+    <section id="oclients">
+        <div class="container">
+            <h2>Our Clients</h2>
+            <div class="logos">
+            <div>
+                <div><img src="./logo/youtube.png"></div>
+                <div><img src="./logo/google-plus.png"></div>
+                <div><img src="./logo/instagram.png"></div>
+                <div><img src="./logo/pinterest.png"></div>
+            </div>
+            <div>
+                <div><img src="./logo/spotify.png"></div>
+                <div><img src="./logo/twitter.png"></div>
+                <div><img src="./logo/vk.png"></div>
+                <div><img src="./logo/whatsapp.png"></div>
+            </div>
         </div>
     </section>
     
+
     <section id="boxes">
         <div class="container">
+        <h2>Browse through our job Sections.</h2>
         <div class="boxin">
             <div class="box">
-                <a>Design</a>
+                <a href="">Design</a>
                 <p>Browse all Design related Jobs here</p>
             </div>
             <div class="box">
-                <a>Technology</a>
+                <a href="">Technology</a>
                 <p>Browse all Technology related Jobs here</p>
             </div>
         </div>
         <div class="boxout">
             <div class="box">
-                <a>Digital Nomad</a>
+                <a href="">Digital Nomad</a>
                 <p>Want to be a Digital Nomad ? we got you covered.</p>
             </div>
         </div>
@@ -97,7 +131,7 @@
     <footer>
         <p>Talhive Copyright © 2018</p>
     </footer>
-    
 
+    <script src="./JS/header.js" type="text/javascript"></script>
 
 </body></html>
