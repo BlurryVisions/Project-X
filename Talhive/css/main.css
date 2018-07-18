@@ -9,8 +9,6 @@ body{
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     text-align: center;
-
-
 }
 
 /* Global */
@@ -32,21 +30,21 @@ header {
     z-index: 1;
     position: fixed;
     min-width: 100%;
-    background: #242525;
+    background: transparent;
     color: #f4f7f6;
-    padding-top: 6px;
-    min-height: 68px;
+    padding-top: 4px;
+    min-height: 66px;
     border-top: #5dbcd2 2px solid;
-    border-bottom: #f4f7f6 2px solid;
     text-align: center;
     transition: all ease .5s;
+    
 }
 
 header.scrolled {
     transition: all ease .5s;
     background: #f4f7f6;
-    color: #000000;
-    border-bottom: #5dbcd2 2px solid;
+    color: #272323;
+    border-bottom: #5c6880 1px solid;
 }
 
 header.scrolled a {
@@ -62,15 +60,16 @@ header.scrolled a:hover {
 }
 
 header a {
-    color: #f4f7f6;;
+	font-weight: bold;
+    color: #f4f7f6;
     text-decoration: none;
+    transition: all ease .1s;
     font-size: 16px;  
 }
 
 header a:hover {
-    font-weight: lighter;  
-    transition: all ease .1s;
-    color: #5dbcd2;    
+    font-weight: bold;  
+    transition: all ease .1s;    
 }
 
 header #Hleft {
@@ -83,7 +82,7 @@ header #Hright {
 
 header li {
     display: inline-block;
-    padding: 26px 16px 16px 16px; 
+    padding: 24px 16px 16px 16px; 
 }
 
 header li:hover{
@@ -122,7 +121,7 @@ border-bottom: 2px solid #5dbcd2 ;
     transform-style: inherit;
     z-index: -1;
     transform: translateZ(-1px) scale(2.2);
-    min-height: 680px;
+    min-height: 520px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -133,11 +132,13 @@ border-bottom: 2px solid #5dbcd2 ;
     content:'';
     position:absolute;
     left:0; top:0;
-    opacity: 0.6;
+    opacity: 0.5;
     width:100%;
     height:100%;
     display:inline-block;
-    background:  linear-gradient(to bottom, #5dbcd2, #87ccd4, #aedbda, #d2e9e5, #f4f7f6);
+    background: #16BFFD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #7330cb, #16BFFD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #7330cb, #16BFFD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #showcase .tex {
@@ -242,20 +243,21 @@ border-bottom: 2px solid #5dbcd2 ;
 }
 
 
-#boxes .box {
-    display: inline-block;
-    background: #ffffff;
+#boxes .boxin , .box {
+    display: inline-block;  
     margin: 20px;
 }
 
+
+
 .box {
+    background: #ffffff;
     border-radius: 5px;
     border: 1px solid #e1e1e5;
    -webkit-box-shadow: 0px 1px 1px 0px #ADD8E6;
    -moz-box-shadow: 0px 1px 1px 0px #ADD8E6;
     box-shadow: 0px 1px 1px 0px #ADD8E6;
-    width: 260px;
-    height: 120px;
+    min-width: 60px;
     padding: 14px;
 }
 
@@ -285,3 +287,4 @@ footer {
 footer p {
     margin: 10px;
 }
+
