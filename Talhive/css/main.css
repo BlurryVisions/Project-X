@@ -333,19 +333,106 @@ border-bottom: 2px solid #5dbcd2 ;
 
 /* oclents */
 
-#oclients , #oclients ul {
-    padding: 20px 0;
+#oclients  {
+    min-height: 250px;
 }
 
-#oclients li  {
+#oclients .slider {
     display: inline-block;
+    
+    padding: 50px 20px 50px 20px;
 }
 
-#oclients img {
-    width :70px;
+.slider {
+    width: 70px;
     height: 70px;
-    padding: 10px 30px 10px 30px;
-}
+    position: relative;
+  }
+  .slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  .slide1 {
+    background: url(../logo/facebook.png)no-repeat center #ffffff;
+    width: 70px;
+    height: 70px;
+        background-size: cover;
+      animation:fade 30s infinite;
+  -webkit-animation:fade 30s infinite;
+  
+  } 
+  .slide2 {
+    background: url(../logo/google-plus.png)no-repeat center #ffffff;
+    width: 70px;
+    height: 70px;
+        background-size: cover;
+      animation:fade2 30s infinite;
+  -webkit-animation:fade2 30s infinite;
+  }
+  .slide3 {
+    background: url(../logo/pinterest.png)no-repeat center #ffffff;
+    width: 70px;
+    height: 70px;
+        background-size: cover;
+      animation:fade 30s infinite;
+  -webkit-animation:fade 30s infinite;
+  } 
+  .slide4 {
+    background: url(../logo/instagram.png)no-repeat center #ffffff;
+    width: 70px;
+    height: 70px;
+        background-size: cover;
+      animation:fade2 30s infinite;
+  -webkit-animation:fade2 30s infinite;
+
+  }
+  .slide5 {
+    background: url(../logo/spotify.png)no-repeat center #ffffff;
+    width: 70px;
+    height: 70px;
+        background-size: cover;
+      animation:fade 30s infinite;
+  -webkit-animation:fade 30s infinite;
+  } 
+  .slide6 {
+    background: url(../logo/twitter.png)no-repeat center #ffffff;
+    width: 70px;
+    height: 70px;
+        background-size: cover;
+      animation:fade2 30s infinite;
+  -webkit-animation:fade2 30s infinite;
+  }
+  .slide7 {
+    background: url(../logo/vk.png)no-repeat center #ffffff;
+    width: 70px;
+    height: 70px;
+        background-size: cover;
+      animation:fade 30s infinite;
+  -webkit-animation:fade 30s infinite;
+  } 
+  .slide8 {
+    background: url(../logo/whatsapp.png)no-repeat center #ffffff;
+    width: 70px;
+    height: 70px;
+        background-size: cover;
+      animation:fade2 30s infinite;
+  -webkit-animation:fade2 30s infinite;
+  }
+
+  @keyframes fade
+  {
+    0%   {opacity:1}
+    50% { opacity: 0}
+    100% { opacity: 1}
+  }
+  @keyframes fade2
+  {
+    0%   {opacity:0}
+    50% { opacity: 1}
+    100% { opacity: 0}
+  }
 
 /*  boxes  */
 
