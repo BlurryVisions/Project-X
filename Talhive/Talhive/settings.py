@@ -76,7 +76,7 @@ WSGI_APPLICATION = 'Talhive.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Talhive',
+        'NAME': 'talhive',
         'USER' : 'root',
         'PASSWORD' : 'nOQgJIM8MdkodEqu',
         'HOST' : 'localhost',
