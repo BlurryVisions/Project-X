@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Talhive</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- SEO -->
+    <meta name="description" content="Job Consultant">
+    <meta name="keywords" content="job portal">
+
+    <!-- link -->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'blog/style.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+        <header>
+                <div class="container">
+        
+                    <form>
+        
+                        <div id="Hleft">
+                            <a href="index.html"><h1>Tal<span class="logoc">hive</span></h1></a>
+                        </div>
+                        <nav>
+                            <div id="Hright">
+                                <ul>
+                                    <a href="blog.html">
+                                        <li>Blog</li>
+                                    </a>
+                                    <a href="Jobs.html">
+                                        <li>Explore Jobs &amp; Companies</li>
+                                    </a>
+                                    <a href="about.html">
+                                        <li>About us</li>
+                                    </a>
+                                    <a href="contact.html">
+                                        <li>Contact us</li>
+                                    </a>
+                                </ul>
+                            </div>
+        
+                        </nav>
+                    </form>
+        
+                </div>
+        </header>
+
+
+        <div class="layout">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+
+        <footer>
+                <p>Talhive Copyright © 2018</p>
+        </footer>
+
+        <script src="{% static 'blog/header.js' %}" type="text/javascript"></script>
+        
+
+</body>
+</html> 
