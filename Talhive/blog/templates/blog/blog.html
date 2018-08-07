@@ -1,5 +1,7 @@
-{% extends 'blog/layout.html' %}
 
-{% block content %}
-    <h1>afsdfds</h1>
-{% endblock %}
+    <h1>list  of blogs</h1>
+    <ul>
+        {% for blogs in blog %}
+            <li><a href="/blog/details/{{blogs.id}}">{{blogs.title}}</a></li>
+        {% endfor %}
+    </ul>
